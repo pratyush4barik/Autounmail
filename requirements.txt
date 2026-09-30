@@ -12,9 +12,11 @@ python-jose==3.3.0
 bcrypt==4.1.1
 authlib==1.3.0
 cryptography==41.0.7
+pwdlib[argon2]==0.2.1
 
 # Email Service
 resend==0.3.0
+resend[async]
 
 # Environment & Configuration
 python-dotenv==1.0.0

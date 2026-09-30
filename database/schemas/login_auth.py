@@ -2,3 +2,7 @@ from pydantic import BaseModel, EmailStr, ConfigDict, field_validator, Field, mo
 
 class MessageResponse(BaseModel):
     message: str
+
+class LoginResponse(BaseModel):
+    email: EmailStr
+    password: str

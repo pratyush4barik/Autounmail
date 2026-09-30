@@ -1,6 +1,7 @@
 from pydantic import BaseModel, EmailStr, ConfigDict, field_validator, Field, model_validator
 
 class MessageResponse(BaseModel):
+    verification_id: str
     message: str
 
 class UserCreate(BaseModel):
