@@ -63,7 +63,7 @@ def get_current_user(
 
 if __name__ == "__main__":
 
-    access_token = create_access_token(12)
+    access_token = create_access_token(9)
 
     print(access_token)
 

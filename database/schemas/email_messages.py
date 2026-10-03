@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field, str, configDict
+from pydantic import BaseModel, Field, str, ConfigDict
 from uuid import UUID
 from database.schemas.message_role import MessageRole
 from datetime import datetime
@@ -15,4 +15,4 @@ class FilterMessagesResponse(BaseModel):
     content: str
     created_at: datetime
 
-    model_config = configDict(from_attributes=True)
+    model_config = ConfigDict(from_attributes=True)

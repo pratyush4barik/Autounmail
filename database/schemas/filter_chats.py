@@ -6,7 +6,7 @@ class FilterChats(BaseModel):
     title : str
     created_at: datetime
 
-class messageResponse(BaseModel):
+class MessageResponse(BaseModel):
     message: str
 
     model_config = configDict(from_attributes=True)
